@@ -20,7 +20,7 @@ nav{
 background: salmon;
 color: #fff ;
 padding: 10px 0px;
-border: 2px solid;
+border: 2px solid #fff;
 display: none;
 }
 @media (max-width: 600px){
