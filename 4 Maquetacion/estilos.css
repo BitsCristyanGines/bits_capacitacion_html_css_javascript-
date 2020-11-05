@@ -4,13 +4,18 @@
     padding: 10px;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
  .header{
-    background: #000;
+    background: url(Imagenes/imagen1.jpg);
+    background-position: center;
+    background-attachment:contain;
+    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
 
@@ -28,17 +33,17 @@
          .logo{
              background: #ea5455;
              flex: 1 1 auto;
-             height: 30px;
+            
          }
          .nav{
              background: #ea5455;
              flex: 5 1 auto;
-             height: 30px;
+             
          }
          .social{
              background:#ea5455  ;
              flex: 1 1 auto;
-             height: 30px;
+            
             }
     .Texto-principal{
       background:#f07b3f;
