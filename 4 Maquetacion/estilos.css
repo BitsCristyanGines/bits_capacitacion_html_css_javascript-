@@ -3,7 +3,7 @@
     margin: 0px ;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
+   
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +15,9 @@ a{
 .padre{
     display: flex;
     flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
 }
  .header{
     background: url(Imagenes/imagen1.jpg);
@@ -55,7 +58,7 @@ a{
          .nav a{
              color: #fff;
              font-size: 11px;
-             text-transform:uppercase ;
+             text-transform:uppercase;
              padding: 0 10px;
              letter-spacing: 2px;
          }
@@ -93,7 +96,7 @@ a{
              }
         
   .section{
-    background: #000;
+    background: #f7f7f7;
     display: flex;
 
   }
@@ -116,6 +119,17 @@ a{
 width: 100%;
 
        }
+       .article a{
+           color: #fff;
+           font-size: 13px;
+           padding: 10px;
+           background: #000;
+           margin: 10px 0;
+           display: inline-block;
+       }
+       .article a:hover{
+           background: #546cc3;
+       }
        h3{
            color: #fff;
            font-size: 13px;
@@ -130,30 +144,55 @@ width: 100%;
 
        }
      .navegacion{
-         background: #70a3c4;
+         background: #000;
          flex: 1 1 100%;
+         margin: 10px 10px 0 0px;
+     }
+     .navegacion a{
+
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
      }
      .aside{
-         background:#f73f52 ;
+         /* background:#f73f52 ; */
          flex: 1 1 auto;
+         margin: 10px 5px 10 px 0;
      }
-        .publicidad{
-            background: #ffea85;
-           
-        }
+     .aside img{
+         width: 100%;
+     }
+     h4{
+         background: #000;
+         color: #fff;
+         padding: 10px;
+         text-transform: uppercase;
+     }
+        /* .publicidad{
+            /* background: #ffea85;
+            } */ 
+        
+         
   .footer{
     background: #000;
-    
-    display: flex;
+    display:flex;
     justify-content: center;
+    margin-top: 10px;
   }
        .pie{
-        background: #e6af2e;
-
-        width: 300px;
-        
+        /* background: #e6af2e; */
+        text-align: center;
        }
-       @media all and (max-width:800px){
+       .pie a{
+           color: #fff;
+           font-size: 11px;
+           text-transform: uppercase;
+           padding: 0 10px;
+           letter-spacing: 2px;
+       }
+       @media all and (max-width:1120px){
            .section{
                flex-direction: column;
            }
@@ -165,10 +204,28 @@ width: 100%;
                display: flex;
                justify-content: center;
            }
+           h1{
+               font-size: 15px;
+           }
+           .Texto-principal{
+                height:400px;
+           }
        }
        @media all and (max-width:600px){
 .articulos{
     flex-direction: column;
+}
+h1{
+    font-size: 15px;
+}
+}
+@media all and(max-width: 650px){
+.off{
+    display: none;
+}
+.nav a{
+    font-size: 25px ;
+}
 }
 @media all and(max-width: 400px){
     .aside{
@@ -176,4 +233,4 @@ width: 100%;
     }
 
 }
-       }
+       
